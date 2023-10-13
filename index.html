@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Activity Tips HTML Converter | School of Public Health</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header-container">
+                <img src="sph-gen-header003.jpg" alt="Header Image" class="header-image">
+            </div>
+            <form>
+                <div class="input-group">
+                    <label for="inputText">Activity Tips Text</label>
+                    <textarea id="inputText" oninput="auto_grow(this)" class="input-text" placeholder="Paste ALL of the activity tips text here..."></textarea>
+                    <button id="convertButton">Convert</button>
+                </div>
+                    
+                <div class="input-group">
+                    <label for="outputHTML">HTML Output</label>
+                    <textarea id="outputHTML" class="input-text" placeholder="Your HTML code will appear here..." readonly></textarea>
+                    <button id="copyButton" type="button">Copy</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
